@@ -1,0 +1,39 @@
+java
+- Class là 1 bản mẫu để định nghĩa và mô tả các attribute và method của các đối tượng cùng loại
+- instance là 1 trường hợp cụ thể của 1 class, vd: class nguoi, instance peter
+- OOP(Object Oriented Programming) là 1 kỹ thuật lập trình dựa trên khái niệm về lớp và đối tượng, tập trung vào các đối tượng thao tác hơn là logic để tạo ra chúng, giúp code dễ quản lý, tái sử dụng và dễ bảo trì
+- Lớp (Class) là 1 khuôn mẫu, đối tượng (Object) là 1 thực thể dựa trên khuôn mẫu đó
+- Phạm vi truy cập
+	+ Private: truy cập nội bộ trong class
+	+ Protected: cả trong và ngoài package, nếu là ngoài thì phải thông qua kế thừa (inheritance)
+	+ Default: Chỉ trong cùng package
+	+ public: bất cứ nơi nào trong project
+- OOP java gồm 4 tính chất đặc trưng: trừu tượng, kế thừa, đóng gói, đa hình
+	+ Trừu tượng (abstract): tổng quát hóa mà không cần đi sâu vào nó, ví dụ: Class Chó có ID, tên, ăn(), kêu() mà không cần định nghĩa hàm, chỉ cần ghi tên hàm
+	+ Tính kế thừa (inheritance): cho phép ta xây dựng 1 lớp mới dựa trên các định nghĩa của lớp đã có
+	+ Tính đóng gói (encapsulation): là đóng gói các attribute, method thành các class, đóng class thành package nhằm che dấu thông tin bảo đảm sự toàn vẹn của dữ liệu
+	+ Tính đa hình (Polymorphism): 2 hay nhiều lớp có những phương thức giống nhau nhưng có thể
+thực thi theo những cách khách nhau. ví dụ chó, mèo, phương thức chung là kêu nhưng theo 2 cái khác nhau
+		+ Trong đa hình có:
+			+ Overriding(ghi đè): viết lại, định nghĩa lại các phương thức mà nó kế thừa từ lớp cha
+			+ Overloading: Sử dụng các phương thức cùng tên nhưng tham số đầu vào lại khác nhau
+- interface: là 1 bản thiết kế của 1 lớp: nó chỉ có các phương thức trừu trượng
+	vd: interface printable{
+		void print();
+	}
+	class A implements printable{	(Có thể có đa kế thừa, ngăn cách bởi dấu ,)
+		public void print(){
+			System.out.print("hello");
+		}
+	}
+	Đặc điểm
+	+ Không thể khởi tạo 1 interface
+	+ 1 interface ko chứa bất kỳ 1 hàm constructor nào
+	+ không thể chứa 1 trường nào trừ static và final
+	+ không thể kế thừa từ lớp, nó được triển khai bởi 1 lớp
+	+ 1 interface có thể kế thừa từ nhiều interface khác
+- Sự khác nhau giữa interface và abstract
+	+ abstract không có đa kế thừa, interface có
+	+ abstract có các biến: final, non-final, static, non-static trong khi interface thì chỉ có các biến static và final
+	+ abstract có thể cung cấp nội dung cài đặt cho interface trong khi interface không thể cung cập nội dung cài đặt cho abstract
+	Abstract có trừu tượng 1 phần, interface có trừu tượng toàn phần
