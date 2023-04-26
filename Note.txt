@@ -9,3 +9,17 @@
         + Queue (hàng đợi): là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Bên cạnh các thao tác cơ bản của collection, Queue cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Queue có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước)
         + Deque: là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Ngoài các thao tác cơ bản của collection, một Deque cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Deques có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước) và LIFO (last-in, first-out - vào sau, ra trước). Trong một Deque, tất cả các phần tử mới có thể được chèn vào, lấy ra và lấy ra ở cả hai đầu.
         + Map: là một đối tượng ánh xạ mỗi key tương úng với một giá trị. Map không thể chứa giá trị trùng lặp. Mỗi key có thể ánh xạ đến nhiều nhất một giá trị.
+3. Nested Class
+    - Trong java, khái niệm class nằm trong class được gọi là inner class (hay còn gọi là nested class). Nó có thể được sủ dụng để giải quyết nhiều vấn đề trong lâp trình, bao gồm việc tạo ra một lớp được định nghĩa riêng biệc và chỉ sử dụng trong phạm vi class bao bọc nó.
+    - Có 4 loại inner class trong java
+        1. Non-static nested class
+        2. Static nested class
+        3. Local class
+        4. Anonymous class
+4. Exception
+    - Trong java, exception là một sự kiện mà phá vỡ luồng chuẩn của chương trình. Nó là một đối tượng mà được ném tại runtime. Một exception là một vấn đế xảy ra trong quá trình thực hiện của chương trình. Một ngoại lệ có thể xảy ra với nhiều lý do khác nhau
+    ví dụ:
+        + Người dùng nhập dữ liệu không hợp lệ
+        + Muốn mở 1 file nhưng không tìm thấy file đó
+        + Kết nối mạng bị ngắt trong quá trình thực hiện giao tiếp hoặc JVM hết bộ nhớ
+    -
