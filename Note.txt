@@ -25,3 +25,22 @@
     - Sự khác nhau cơ bản giữa getMessage() và printstacktrace()
         + e.getMessage(): Trả về thông báo chung về ngoại lệ
         + e.printStackTrace(): Cung cấp chi tiết về khung trình gọi liên quan đến việc phát sinh ngoại lệ để giúp trong việc khắc phục lỗi
+    - Các lưu ý
+        + Không nên có catch hoặc finally nếu không có try
+        + Không được đặt 1 đoạn code bất kì ở giữa try và catch
+        + try phải đi kèm catch hoặc finally
+        + Nếu try chỉ đi cùng với finally(ko có catch) thì phải định nghĩa exception (
+            ex:
+                void go() throws FooException{
+                    try{
+                        x.doStuff()
+                    }
+                    finally{}
+                }
+5. Transient
+    - từ khóa transient định nghĩa đặc tính (field) không được lưu trữ trong bộ nhớ
+    - Bất kì field được đánh dấu là transient sẽ không được tái tạo khi một đối tượng thực hiện các phép tái tạo chuyển đổi (như lưu dường truyền,...)
+    - Các thuộc tính transient sẽ đánh dấu rằng chúng là những thông tin nội bộ nên sẽ không được chuyển đi bất cứ đâu
+    - transient đóng vai trò quan trọng trong bảo mật ,có thể sử dụng nó để chắc rằng ko lưu các nội dung nhạy cảm xuống file, database hoặc chuyển đến 1 nơi khác.
+6. Enum
+    - Enum trong java là một kiểu dữ liệu đặc biệt được sử dụng để định nghĩa các tập hợp các hằng số. Một enum có thể chứa các trường, phương thức và constructor
