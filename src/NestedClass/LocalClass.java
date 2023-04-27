@@ -14,5 +14,6 @@ public class LocalClass {
     public static void main(String[] args) {
         LocalClass localClass = new LocalClass();
         localClass.display();
+
     }
 }

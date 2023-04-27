@@ -1,4 +1,4 @@
-package test1;
+package Compare;
 
 public class Compare {
     public static void main(String[] args) {

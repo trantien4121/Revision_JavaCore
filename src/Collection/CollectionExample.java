@@ -120,7 +120,7 @@ public class CollectionExample {
         System.out.println(ad);
         ad.offer("ad4-of"); //insert element that is pointed in the last of Array Deque. If Array Dequeue full, offer() return false
         ad.offerFirst("ad0-of");    //insert element that is pointed in the first of Array Deque
-        ad.addLast("ad5-of");   //insert element that is pointed in the last of Array Deque
+        ad.offerLast("ad5-of");   //insert element that is pointed in the last of Array Deque
         System.out.println("after: " + ad);
         System.out.println("The First element of Array Deque: " + ad.getFirst());
         System.out.println("The Last element of the Array Deque: " + ad.getLast()); //If Array Dequeue empty, getFirst(), getLast() throw a no such element
@@ -207,8 +207,8 @@ public class CollectionExample {
         System.out.println("Using headset without boolean value: " + ts.headSet("c"));  //Tra ve cac phan tu truoc phan tu chi dinh ma khong lay phan tu chi dinh do (mac dinh la false)
         System.out.println("Using headset with boolean value: " + ts.headSet("c", true));   //Tra ve cac phan tu truoc phan tu chi dinh va lay luon phan tu chi dinh do
 
-        System.out.println("Using tailSet without boolean value: " + ts.tailSet("c"));   //Tra ve cac phan tu sau phan tu chi dinh ma khong lay phan tu do (mac dinh false)
-        System.out.println("Using tailSet with boolean value: " + ts.tailSet("c", true));   //Tra ve cac phan tu sau phan tu chi dinh va lay luon phan tu chi dinh do
+        System.out.println("Using tailSet without boolean value: " + ts.tailSet("c", false));   //Tra ve cac phan tu sau phan tu chi dinh va lay luon phan tu do (mac dinh true)
+        System.out.println("Using tailSet with boolean value: " + ts.tailSet("c"));   //Tra ve cac phan tu sau phan tu chi dinh va ko lay phan tu do ( mac dinh la true)
 
         //co cac phuong thuc dang trung cua set nhu addAll() de lien ket, retainAll() lay giao 2 tap, removeAll() tinh toan su khac biet giua 2 tap
 

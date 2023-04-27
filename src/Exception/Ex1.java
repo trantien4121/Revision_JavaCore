@@ -8,7 +8,7 @@ public class Ex1 {
             int c = a/b;
             System.out.println(c);
         }catch(ArithmeticException e){
-            e.getMessage();
+            e.printStackTrace();
         }
     }
 }

@@ -22,4 +22,6 @@
         + Người dùng nhập dữ liệu không hợp lệ
         + Muốn mở 1 file nhưng không tìm thấy file đó
         + Kết nối mạng bị ngắt trong quá trình thực hiện giao tiếp hoặc JVM hết bộ nhớ
-    -
+    - Sự khác nhau cơ bản giữa getMessage() và printstacktrace()
+        + e.getMessage(): Trả về thông báo chung về ngoại lệ
+        + e.printStackTrace(): Cung cấp chi tiết về khung trình gọi liên quan đến việc phát sinh ngoại lệ để giúp trong việc khắc phục lỗi
